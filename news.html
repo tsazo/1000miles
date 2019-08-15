@@ -31,7 +31,7 @@
     }
 
     #index {
-      background-image: url('https://images.unsplash.com/photo-1550945392-d88932e4b517?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-image: url('https://images.unsplash.com/photo-1534109284468-ad30ffd1f41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
     }
 
     #top {
@@ -96,31 +96,31 @@
       justify-content:space-between;
     }
 
-    #aboutNav {
+    #stories {
       margin:0px auto;
       padding:0px 20px;
       min-width:100px;
       text-align: center;
     }
 
-    #aboutNav a {
+    #stories a {
       text-decoration:none;
       color: grey;
       font-size:12px;
       transition:0.4s;
     }
 
-    #aboutNav a:hover {
+    #stories a:hover {
       color:green;
       letter-spacing: 1px;
       transition:0.4s;
     }
 
-    #aboutNav #active {
+    #stories #active {
       color:black;
     }
 
-    #aboutNav #active:hover {
+    #stories #active:hover {
       color:green;
       letter-spacing: 1px;
       transition:0.4s;
@@ -172,7 +172,7 @@
 
     <div class="home" id='index'>
       <div id='statement'>
-        <p id="slogan"><b>CONTACT</b></p>
+        <p id="slogan"><b>NEWS</b></p>
       </div>
     </div>
 
@@ -187,10 +187,10 @@
     </div>
 
     <div id='container'>
-      <div id='aboutNav'>
-        <p id='about_text'>ABOUT</p>
-        <p><a href="about.html">MY STORY</a></p>
-        <p><a id='active' href="contact.html">CONTACT</a></p>
+      <div id='stories'>
+        <p id='about_text'>POSTS</p>
+        <p><a href="#story1">NAME#1</a></p>
+        <p><a href="#story2">NAME#2</a></p>
       </div>
 
       <div style='margin-right:20px; width:100%;'>
@@ -218,7 +218,7 @@
 
   <!-- <script type="text/javascript">
     window.onscroll = function() {myFunction()};
-    var navbar = document.getElementById('aboutNav');
+    var navbar = document.getElementById('stories');
     var sticky = navbar.offsetTop;
     function myFunction() {
       if(window.pageYOffset >= sticky) {
