@@ -133,39 +133,28 @@
       color:green;
     }
 
-    #contact-form {
+    .story {
+      margin:0px auto;
+      /* width:90%; */
       font-family: "Times", serif;
-      margin-top:20px;
     }
 
-    input[type=text], textarea, input[type=email] {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin:10px 0px 25px 0px;
-      resize: vertical;
+    .story h2, .story div, .story h4 {
+      font-family: "Times", serif;
+      font-weight:normal;
     }
 
-    textarea {
-      height:150px;
+    .story h2 {
+      font-size:35px;
     }
 
-    input[type=submit] {
-      font-size:15px;
-      padding: 12px 30px;
-      background-color:black;
-      color:white;
-      letter-spacing:2px;
-      transition:0.4s;
+    .story h4 {
+      /* font-size:35px; */
+      margin:0px 0px 10px 0px;
+      color:grey;
     }
 
-    input[type=submit]:hover {
-      background-color:grey;
-      cursor:pointer;
-      transition:0.4s;
-    }
+
 
   </style>
   <body>
@@ -187,46 +176,42 @@
     </div>
 
     <div id='container'>
+      <!-- THis is the story navigation bar -->
       <div id='stories'>
         <p id='about_text'>POSTS</p>
+        <!-- To add a new story, simply copy one of the lines below and change the href value to it's corresponding story -->
+        <!-- You could also include a short version of the name of the post for users to click on -->
         <p><a href="#story1">NAME#1</a></p>
         <p><a href="#story2">NAME#2</a></p>
       </div>
 
       <div style='margin-right:20px; width:100%;'>
-        <h2>GET IN TOUCH</h2>
 
-        <form id='contact-form' method="post" action='contact.php'>
-          <label for="name">Name *</label>
-          <input type="text" name="name" class='form-control' placeholder="Your First and Last Name" required>
+        <!-- For a new post, simply copy and paste what's below and post it above (so that the most recent post is first)! -->
+        <!-- Some important notes: change the id name to story3, story4, etc. You get the point :) -->
+        <!-- Do NOT change the class. -->
+        <div class="story" id='story1'>
+          <!-- Below is the data -->
+          <h4>August 15, 2019</h4>
+          <!-- Below is your title -->
+          <h2>Post 1</h2>
+          <!-- Below is the actual text -->
+          <div class="" style="height:500px;">
+            <!-- For each new paragraph, insert your texts between new <p></p> tags -->
+            <p></p>
+          </div>
 
-          <label for="email">Email *</label>
-          <input type="email" name="email" class='form-control' placeholder="email@domain.com" required>
+        <!-- Don't forget to update the story navigation bar above by adding the name and id name under href! ^^ -->
+        </div>
 
-          <label for="subject">Subject *</label>
-          <input type="text" name="subject" class='form-control' placeholder="Subject" required>
-
-          <label for="message">Message *</label>
-          <textarea name="message" class="form-control" placeholder="Let me know what is on your mind!" row="4" required></textarea>
-          <input type="submit" class="form-control submit" name="submit" value="SUBMIT">
-        </form>
+        <div class="story" id='story2'>
+          <h4>August 15, 2019</h4>
+          <h2>Post 2</h2>
+          <div class="" style="height:300px;"></div>
+        </div>
 
       </div>
     </div>
 
   </body>
-
-  <!-- <script type="text/javascript">
-    window.onscroll = function() {myFunction()};
-    var navbar = document.getElementById('stories');
-    var sticky = navbar.offsetTop;
-    function myFunction() {
-      if(window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove('sticky');
-      }
-    }
-  </script> -->
-
 </html>
