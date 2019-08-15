@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ONE STEP AT A TIME | Elena Vinton</title>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400i|Red+Hat+Display:500,700&display=swap" rel="stylesheet">
+  </head>
+
+  <style media="screen">
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .home, #top {
+      display: flex;
+      color: white;
+    }
+
+    .home {
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+      background-attachment:fixed;
+      height: 70vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #index {
+      background-image: url('https://images.unsplash.com/photo-1550945392-d88932e4b517?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+    }
+
+    #top {
+      position: absolute;
+      top: 0;
+      justify-content: space-between;
+      align-items:center;
+      width: 100%;
+    }
+
+    #logo {
+      font-size:20px;
+      margin:10px 15px;
+    }
+
+    nav {
+      /* align-self: center; */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 5px;
+      padding: 10px 15px;
+      transition: 0.3s;
+    }
+
+    nav a:last-child{
+      margin-right:15px;
+    }
+
+    nav a:hover {
+      transition: 0.4s;
+      color: grey;
+      letter-spacing:2px;
+    }
+
+    #donate {
+      border:solid white 1px;
+      border-radius:20px;
+    }
+
+    #donate:hover {
+      background-color: white;
+    }
+
+    #statement {
+      margin:0px auto;
+      text-align: center;
+      /* align-self: center; */
+    }
+
+    #slogan {
+      font-size:55px;
+      letter-spacing: 8px;
+      font-weight:bolder;
+    }
+
+    #container {
+      margin:50px 0px;
+      display:flex;
+      justify-content:space-between;
+    }
+
+    #aboutNav {
+      margin:0px auto;
+      padding:0px 20px;
+      min-width:100px;
+      text-align: center;
+    }
+
+    #aboutNav a {
+      text-decoration:none;
+      color: grey;
+      font-size:12px;
+      transition:0.4s;
+    }
+
+    #aboutNav a:hover {
+      color:green;
+      letter-spacing: 1px;
+      transition:0.4s;
+    }
+
+    #aboutNav #active {
+      color:black;
+    }
+
+    #aboutNav #active:hover {
+      color:green;
+      letter-spacing: 1px;
+      transition:0.4s;
+    }
+
+    #about_text {
+      font-family: "Times", serif;
+      font-weight:bold;
+      font-size:18px;
+      color:green;
+    }
+
+    #contact-form {
+      font-family: "Times", serif;
+      margin-top:20px;
+    }
+
+    input[type=text], textarea, input[type=email] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin:10px 0px 25px 0px;
+      resize: vertical;
+    }
+
+    textarea {
+      height:150px;
+    }
+
+    input[type=submit] {
+      font-size:15px;
+      padding: 12px 30px;
+      background-color:black;
+      color:white;
+      letter-spacing:2px;
+      transition:0.4s;
+    }
+
+    input[type=submit]:hover {
+      background-color:grey;
+      cursor:pointer;
+      transition:0.4s;
+    }
+
+  </style>
+  <body>
+
+    <div class="home" id='index'>
+      <div id='statement'>
+        <p id="slogan"><b>CONTACT</b></p>
+      </div>
+    </div>
+
+    <div id="top">
+      <div id='logo'>ONE THOUSAND<br>MILES</div>
+      <nav>
+        <a href="index1.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="#news">NEWS</a>
+        <a href="#donate" id='donate'>DONATE</a>
+      </nav>
+    </div>
+
+    <div id='container'>
+      <div id='aboutNav'>
+        <p id='about_text'>ABOUT</p>
+        <p><a href="about.html">MY STORY</a></p>
+        <p><a id='active' href="contact.html">CONTACT</a></p>
+      </div>
+
+      <div style='margin-right:20px; width:100%;'>
+        <h2>GET IN TOUCH</h2>
+
+        <form id='contact-form' method="post" action='contact.php'>
+          <label for="name">Name *</label>
+          <input type="text" name="name" class='form-control' placeholder="Your First and Last Name" required>
+
+          <label for="email">Email *</label>
+          <input type="email" name="email" class='form-control' placeholder="email@domain.com" required>
+
+          <label for="subject">Subject *</label>
+          <input type="text" name="subject" class='form-control' placeholder="Subject" required>
+
+          <label for="message">Message *</label>
+          <textarea name="message" class="form-control" placeholder="Let me know what is on your mind!" row="4" required></textarea>
+          <input type="submit" class="form-control submit" name="submit" value="SUBMIT">
+        </form>
+
+      </div>
+    </div>
+
+  </body>
+
+  <!-- <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById('aboutNav');
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if(window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    }
+  </script> -->
+
+</html>
