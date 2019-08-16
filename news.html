@@ -97,7 +97,6 @@
     }
 
     #stories {
-      margin:0px auto;
       padding:0px 20px;
       min-width:100px;
       text-align: center;
@@ -165,12 +164,19 @@
       margin:10px auto;
       width:40%;
       object-fit: cover;
+      max-height:75vh;
     }
 
     .paragraphs p {
       text-align:left;
       font-family: "Times", serif;
       margin:15px 0px;
+    }
+
+    .sticky {
+      position:fixed;
+      top:30px;
+      left:40px;
     }
 
   </style>
@@ -195,11 +201,13 @@
     <div id='container'>
       <!-- THis is the story navigation bar -->
       <div id='stories'>
-        <p id='about_text'>POSTS</p>
-        <!-- To add a new story, simply copy one of the lines below and change the href value to it's corresponding story -->
-        <!-- You could also include a short version of the name of the post for users to click on -->
-        <p><a href="#story1">NAME#1</a></p>
-        <p><a href="#story2">NAME#2</a></p>
+        <div id="text">
+          <p id='about_text'>POSTS</p>
+          <!-- To add a new story, simply copy one of the lines below and change the href value to it's corresponding story -->
+          <!-- You could also include a short version of the name of the post for users to click on -->
+          <p><a href="#story1">NAME#1</a></p>
+          <p><a href="#story2">NAME#2</a></p>
+        </div>
       </div>
 
       <div style='margin-right:20px; width:100%;'>
@@ -247,4 +255,18 @@
     </div>
 
   </body>
+
+  <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById('text');
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if(window.pageYOffset >= sticky && window.innerWidth >= 650) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    }
+  </script>
+
 </html>

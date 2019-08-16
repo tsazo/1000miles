@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>ONE STEP AT A TIME | Elena Vinton</title>
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400i|Red+Hat+Display:500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b824d885b5.js"></script>
   </head>
 
   <style media="screen">
@@ -92,20 +93,91 @@
 
     #container {
       width:100%;
+      height:50vh;
+      text-align:center;
+      padding:50px 0px;
     }
 
-    #left {
+    #container h2 {
+      font-weight:;
+    }
+
+    #left, #right {
       float:left;
       margin:0px auto;
       width:50%;
-      height:50vw;
+      height:50vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+
+    #left p, #right p {
+      font-family:"Times", serif;
+      margin:30px 100px;
+      font-size:18px;
     }
 
     #right {
       float:right;
-      margin:0px auto;
-      width:50%;
-      height:50vw;
+    }
+
+    #container a {
+      text-decoration:none;
+      padding:20px;
+      background-color:#44BAA4;
+      color:white;
+      border-radius:50px;
+      font-size:13px;
+      transition:0.4s;
+    }
+
+    #container a:hover {
+      background-color:lightgrey;
+      transition:0.4s;
+    }
+
+    #footer {
+      text-align:center;
+      background-color:#44BAA4;
+      padding:50px;
+    }
+
+    #footer h3, #footer h2 {
+      font-weight:normal;
+      color:white;
+    }
+
+    #trin {
+      margin:50px 0px;
+      width:300px;
+      height:300px;
+      object-fit:cover;
+      border-radius:100%;
+    }
+
+    #icons {
+      margin:50px 0px 0px 0px;
+    }
+
+    #icons i {
+      margin:0px 30px;
+      color:white;
+      font-size:35px;
+      transition:0.4s;
+    }
+
+    #icons i:hover {
+      font-size:40px;
+      cursor:pointer;
+      transition:0.4s;
+    }
+
+    footer {
+      margin:20px 0px;
+      text-align:center;
+      color:grey;
     }
 
   </style>
@@ -129,11 +201,33 @@
 
     <div id='container'>
       <div id='left'>
+        <h2>DONATE</h2>
+        <p>Your donation allows us to connect to people and create partnerships around the world. We run conservation projects with our partners, seeking the most constructive solutions.</p>
+        <a href="https://fundraise.nationalparks.org/give/f2220565/#!/donation/checkout" target="_blank">MAKE A DONATION</a>
       </div>
 
       <div id='right'>
+        <h2>SPREAD THE WORD</h2>
+        <p>Tell your friends and family about these threatened places. There's no better way to make an impact than to become an active advocate yourself. Join now and make a change!</p>
+        <a href="https://fundraise.nationalparks.org/campaign/fundraise-for-the-national-park-foundation/c181328" target="_blank">JOIN THE FOUNDATION</a>
       </div>
     </div>
+
+    <div id='footer'>
+      <h3>MEET  THE  DEVELOPER</h3>
+      <h2>TRINITY SAZO</h2>
+      <img id='trin' src="Photos/trin.jpg" alt="A portrait of Trinity, the website developer.">
+      <p>Trinity Sazo is a recent high school graduate from Phillips Academy at Andover and is currently an incoming college freshman to Columbia University's School of Engineering and Applied Sciences. She has taken multiple computer science courses during her time there including Web Design Basics, AP Computer Science, and a few Python classes. She took on this project to help her friend Elena Vinton spread awareness about her current campaign. Trinity's past projects have included coding a texting simulation as well as a mock-up online literary magazine. To contact her, please use the icons below.</p>
+      <div id="icons">
+        <a href="https://www.instagram.com/trinsazo/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:ts3185@columbia.edu?Subject=I Liked Your Website" target="_top"><i class="far fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/trinitysazo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <footer>
+      Copyright © 2019 Trinity Sazo & Elena Vinton. All rights reserved.
+    </footer>
 
   </body>
 </html>
