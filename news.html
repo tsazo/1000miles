@@ -134,7 +134,8 @@
     }
 
     .story {
-      margin:0px auto;
+      margin:0px auto 100px;
+      text-align:center;
       /* width:90%; */
       font-family: "Times", serif;
     }
@@ -154,7 +155,23 @@
       color:grey;
     }
 
+    .horizontalPhoto img {
+      margin:10px auto;
+      width:60%;
+      object-fit: cover;
+    }
 
+    .verticalPhoto img {
+      margin:10px auto;
+      width:40%;
+      object-fit: cover;
+    }
+
+    .paragraphs p {
+      text-align:left;
+      font-family: "Times", serif;
+      margin:15px 0px;
+    }
 
   </style>
   <body>
@@ -195,10 +212,18 @@
           <h4>August 15, 2019</h4>
           <!-- Below is your title -->
           <h2>Post 1</h2>
+          <!-- Below is your photo! Depending if the photo is vertical or horizontal, change the class name accordingly-->
+          <!-- horizontalPhoto for horizontal and verticalPhoto for vertical -->
+          <div class='horizontalPhoto'>
+            <img src="https://images.unsplash.com/photo-1533736861214-1882c159f930?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2389&q=80" alt="Image of hikers in the mountains">
+          </div>
           <!-- Below is the actual text -->
-          <div class="" style="height:500px;">
+          <div class="paragraphs">
             <!-- For each new paragraph, insert your texts between new <p></p> tags -->
-            <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor neque vitae tempus quam pellentesque nec. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Leo urna molestie at elementum eu facilisis sed odio morbi. A diam maecenas sed enim ut sem. Rutrum quisque non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. At tellus at urna condimentum mattis pellentesque id. Vestibulum sed arcu non odio. In massa tempor nec feugiat nisl. Vulputate dignissim suspendisse in est ante in nibh mauris. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Sed risus ultricies tristique nulla. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Volutpat est velit egestas dui. Turpis cursus in hac habitasse platea. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Massa vitae tortor condimentum lacinia.</p>
+            <p>Libero volutpat sed cras ornare arcu dui vivamus arcu. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Tempor orci eu lobortis elementum nibh. Tincidunt eget nullam non nisi. Aliquam sem fringilla ut morbi tincidunt. Vel quam elementum pulvinar etiam. Interdum velit laoreet id donec ultrices tincidunt arcu. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Quisque non tellus orci ac auctor augue mauris augue neque. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Quis auctor elit sed vulputate mi sit amet mauris commodo. Tortor condimentum lacinia quis vel eros.</p>
+            <p>In dictum non consectetur a erat. Bibendum ut tristique et egestas quis. Parturient montes nascetur ridiculus mus. Arcu ac tortor dignissim convallis aenean et tortor at. Tempor id eu nisl nunc mi ipsum faucibus vitae. Facilisis volutpat est velit egestas dui id ornare arcu. Risus nullam eget felis eget. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Amet est placerat in egestas. Purus viverra accumsan in nisl. Auctor urna nunc id cursus metus aliquam. Eget velit aliquet sagittis id consectetur. Platea dictumst vestibulum rhoncus est. Dictum sit amet justo donec enim diam vulputate. Sed vulputate mi sit amet mauris commodo quis. Mattis rhoncus urna neque viverra justo nec ultrices. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Mauris sit amet massa vitae tortor. Enim tortor at auctor urna.</p>
+            <p>Metus aliquam eleifend mi in nulla posuere. Amet justo donec enim diam. Vel eros donec ac odio tempor orci. Praesent elementum facilisis leo vel fringilla est. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Facilisi etiam dignissim diam quis. Velit scelerisque in dictum non consectetur a erat. Tortor pretium viverra suspendisse potenti nullam ac tortor. Amet consectetur adipiscing elit ut aliquam purus. Volutpat commodo sed egestas egestas fringilla phasellus. Ipsum consequat nisl vel pretium. Sit amet est placerat in egestas erat imperdiet sed euismod.</p>
           </div>
 
         <!-- Don't forget to update the story navigation bar above by adding the name and id name under href! ^^ -->
@@ -207,7 +232,15 @@
         <div class="story" id='story2'>
           <h4>August 15, 2019</h4>
           <h2>Post 2</h2>
-          <div class="" style="height:300px;"></div>
+          <div class="verticalPhoto">
+            <img src="https://images.unsplash.com/photo-1533736946523-4501244af449?ixlib=rb-1.2.1&auto=format&fit=crop&w=582&q=80" alt="Beautiful of mountain side">
+          </div>
+          <div class="paragraphs">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor neque vitae tempus quam pellentesque nec. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Leo urna molestie at elementum eu facilisis sed odio morbi. A diam maecenas sed enim ut sem. Rutrum quisque non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat. Arcu cursus vitae congue mauris rhoncus aenean vel elit. At tellus at urna condimentum mattis pellentesque id. Vestibulum sed arcu non odio. In massa tempor nec feugiat nisl. Vulputate dignissim suspendisse in est ante in nibh mauris. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Sed risus ultricies tristique nulla. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Volutpat est velit egestas dui. Turpis cursus in hac habitasse platea. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Massa vitae tortor condimentum lacinia.</p>
+            <p>Libero volutpat sed cras ornare arcu dui vivamus arcu. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Tempor orci eu lobortis elementum nibh. Tincidunt eget nullam non nisi. Aliquam sem fringilla ut morbi tincidunt. Vel quam elementum pulvinar etiam. Interdum velit laoreet id donec ultrices tincidunt arcu. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Quisque non tellus orci ac auctor augue mauris augue neque. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Quis auctor elit sed vulputate mi sit amet mauris commodo. Tortor condimentum lacinia quis vel eros.</p>
+            <p>In dictum non consectetur a erat. Bibendum ut tristique et egestas quis. Parturient montes nascetur ridiculus mus. Arcu ac tortor dignissim convallis aenean et tortor at. Tempor id eu nisl nunc mi ipsum faucibus vitae. Facilisis volutpat est velit egestas dui id ornare arcu. Risus nullam eget felis eget. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Amet est placerat in egestas. Purus viverra accumsan in nisl. Auctor urna nunc id cursus metus aliquam. Eget velit aliquet sagittis id consectetur. Platea dictumst vestibulum rhoncus est. Dictum sit amet justo donec enim diam vulputate. Sed vulputate mi sit amet mauris commodo quis. Mattis rhoncus urna neque viverra justo nec ultrices. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Mauris sit amet massa vitae tortor. Enim tortor at auctor urna.</p>
+            <p>Metus aliquam eleifend mi in nulla posuere. Amet justo donec enim diam. Vel eros donec ac odio tempor orci. Praesent elementum facilisis leo vel fringilla est. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Facilisi etiam dignissim diam quis. Velit scelerisque in dictum non consectetur a erat. Tortor pretium viverra suspendisse potenti nullam ac tortor. Amet consectetur adipiscing elit ut aliquam purus. Volutpat commodo sed egestas egestas fringilla phasellus. Ipsum consequat nisl vel pretium. Sit amet est placerat in egestas erat imperdiet sed euismod.</p>
+          </div>
         </div>
 
       </div>
