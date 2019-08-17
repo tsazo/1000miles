@@ -96,7 +96,7 @@
       font-weight:bolder;
     }
 
-    .info, .text, #midText {
+    .info, #midText {
       display: flex;
       justify-content:center;
       align-items:center;
@@ -122,15 +122,63 @@
     }
 
     .info {
-      height:50vh;
-      margin:100px;
+      width: 85%;
+      margin: 0px auto;
+      justify-content:space-around;
+      flex-wrap: wrap;
     }
 
-    .image, .text {
-      margin:auto;
+    .info a {
+      text-decoration:none;
+      padding:20px;
+      background-color:#44BAA4;
+      color:white;
+      border-radius:50px;
+      font-size:13px;
+      transition:0.4s;
+    }
+
+    .info a:hover {
       background-color:lightgrey;
-      height:50vh;
-      width:40vw;
+      transition:0.4s;
+    }
+
+    .text {
+      display: flex;
+      justify-content:space-around;
+      align-items:center;
+      text-align: center;
+      flex-direction: column;
+      height:350px;
+      width:350px;
+    }
+
+    .text p {
+      font-size: 18px;
+      font-family: "Times", serif;
+    }
+
+    .text h4 {
+      color:lightgrey;
+      font-weight: normal;
+      letter-spacing: 4px;
+    }
+
+    .image img, .text {
+      margin:50px 0px;
+    }
+
+    .image img {
+      object-fit: cover;
+      height:400px;
+      width:550px;
+    }
+
+    footer {
+      font-size: 12px;
+      margin:20px 0px;
+      text-align:center;
+      color:grey;
     }
   </style>
   <body>
@@ -160,14 +208,30 @@
     </div>
 
     <div class="info" style="margin-top:0px;">
-      <div class='image'></div>
-      <div class='text'></div>
+      <div class='image'>
+        <img src="https://images.unsplash.com/photo-1522775559573-2f76d540932b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80" alt="Image of bridge">
+      </div>
+      <div class='text'>
+        <h4>MISSION</h4>
+        <p>I've always loved the outdoors. After graduating high school, I set out for a gap year to immerse myself in what I love, as well as give back to it. I have learned about non sibi during high school, which stands for "not for self." I am backpacking and donating to stand up for environmental improvement and security. Let's spark change together.</p>
+        <a href="about.html" target="_blank">LEARN  MORE</a>
+      </div>
     </div>
 
     <div class="info">
-      <div class='text'></div>
-      <div class='image'></div>
+      <div class='text'>
+        <h4>TAKE ACTION</h4>
+        <p>Donate to the National Park Foundation to help preserve national parks for future generations.</p>
+        <a href="donate.html" target="_blank">DONATE  HERE</a>
+      </div>
+      <div class='image'>
+        <img src="https://images.unsplash.com/photo-1453176292710-f2e5c6adc064?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Image of hikers relaxing and looking at running water.">
+      </div>
     </div>
+
+    <footer>
+      Copyright © 2019 Trinity Sazo & Elena Vinton. All rights reserved.
+    </footer>
 
   </body>
 </html>

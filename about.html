@@ -15,7 +15,6 @@
     }
 
     .home, #top {
-      display: flex;
       color: white;
     }
 
@@ -23,11 +22,8 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-attachment:fixed;
       height: 90vh;
       width: 100vw;
-      justify-content: center;
-      align-items: center;
     }
 
     #index {
@@ -35,9 +31,9 @@
     }
 
     #top {
-      justify-content: space-between;
-      align-items:center;
+      padding: 10px 0px;
       width: 100%;
+      text-align: center;
     }
 
     #logo {
@@ -45,20 +41,14 @@
       margin:10px 15px;
     }
 
-    nav {
-      /* align-self: center; */
-    }
-
     nav a {
+      display: block;
       color: white;
       text-decoration: none;
-      margin: 10px 5px;
-      padding: 10px 15px;
+      margin:0px auto;
+      width: 95%;
+      padding: 10px 0px;
       transition: 0.3s;
-    }
-
-    nav a:last-child{
-      margin-right:15px;
     }
 
     nav a:hover {
@@ -90,60 +80,134 @@
       border-radius: 100%;
     }
 
-    #container {
-      display:flex;
-      justify-content:space-between;
+    @media only screen and (min-width: 700px) {
+      .home, #top {
+        display: flex;
+      }
+
+      .home {
+        background-attachment:fixed;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #top {
+        padding: 0px;
+        text-align: inherit;
+        justify-content: space-between;
+        align-items:center;
+      }
+
+      nav a {
+        display: inline;
+        margin: 10px 5px;
+        padding: 10px 15px;
+      }
+
+      nav a:last-child{
+        margin-right:15px;
+      }
+
+      #donate {
+        border:solid white 1px;
+        border-radius:20px;
+      }
+
+      #donate:hover {
+        background-color: white;
+      }
+
+      #containerAbout {
+        display:flex;
+        justify-content:space-between;
+      }
+
+      #aboutNav {
+        margin:0px auto;
+        padding:0px 20px;
+        min-width:100px;
+        text-align: center;
+      }
+
+      #aboutNav a {
+        text-decoration:none;
+        color: grey;
+        font-size:12px;
+        transition:0.4s;
+      }
+
+      #aboutNav a:hover {
+        color:green;
+        letter-spacing: 1px;
+        transition:0.4s;
+      }
+
+      #aboutNav #active {
+        color:black;
+      }
+
+      #aboutNav #active:hover {
+        color:green;
+        letter-spacing: 1px;
+        transition:0.4s;
+      }
+
+      #about_text {
+        font-family: "Times", serif;
+        font-weight:bold;
+        font-size:18px;
+        color:green;
+      }
+
+      #bio {
+        width: 100%;
+        padding: 0px 12px 12px 12px;
+        box-sizing: border-box;
+        margin:0px 20px 25px 0px;
+        resize: vertical;
+      }
+
+      #bio p {
+        font-family: "Times", serif;
+        font-size:18px;
+        margin-bottom: 15px;
+      }
+
+      #gallery {
+        margin: 0px auto;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      h2 {
+        margin-top: 40px;
+        text-align: center;
+        font-weight: normal;
+        color: green;
+      }
+
+      .photo img {
+        margin: 30px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      .photo img:hover {
+        border: 2px green solid;
+        width: 350px;
+        transition: 0.4s;
+      }
     }
 
-    #aboutNav {
-      margin:0px auto;
-      padding:0px 20px;
-      min-width:100px;
-      text-align: center;
-    }
-
-    #aboutNav a {
-      text-decoration:none;
-      color: grey;
-      font-size:12px;
-      transition:0.4s;
-    }
-
-    #aboutNav a:hover {
-      color:green;
-      letter-spacing: 1px;
-      transition:0.4s;
-    }
-
-    #aboutNav #active {
-      color:black;
-    }
-
-    #aboutNav #active:hover {
-      color:green;
-      letter-spacing: 1px;
-      transition:0.4s;
-    }
-
-    #about_text {
-      font-family: "Times", serif;
-      font-weight:bold;
-      font-size:18px;
-      color:green;
-    }
-
-    #bio {
-      width: 100%;
-      padding: 0px 12px 12px 12px;
-      box-sizing: border-box;
-      margin:0px 20px 25px 0px;
-      resize: vertical;
-    }
-
-    #bio p {
-      font-family: "Times", serif;
-      font-size:18px;
-      margin-bottom: 15px;
+    footer {
+      font-size: 12px;
+      margin:20px 0px;
+      text-align:center;
+      color:grey;
     }
 
   </style>
@@ -160,10 +224,11 @@
     </div>
 
     <div id='profPic'>
+      <h1 style="margin-bottom:30px;">ELENA VINTON</h1>
       <img src='Photos/profile_pic.jpg'>
     </div>
 
-    <div id='container'>
+    <div id='containerAbout'>
       <div id='aboutNav'>
         <p id='about_text'>ABOUT</p>
         <p><a id='active' href="about.html">MY STORY</a></p>
@@ -178,6 +243,27 @@
         <p>Sand-Attack Blitzle Vaporeon I wanna be the very best Shieldon Pokemon 4Ever Glameow. Pewter City Quilava Magcargo Terrakion Bouffalant Swablu Ice Berry. Harden Professor Elm Nidorina Boulder Badge Misty Zigzagoon Wurmple. Grass Zigzagoon Shroomish Kricketune Skuntank Gothita Water Gun. Pika-pi Shelgon Wing Attack fishing rod Magmar Grotle James.</p>
       </div>
     </div>
+
+    <h2>GALLERY</h2>
+
+    <div id="gallery">
+      <div class="photo"><img src="Photos/beach1.jpg" alt="A beach." href="Photos/beach1.jpg"></div>
+      <div class="photo"><img src="Photos/IMG_0619.jpg" alt="Elena and her two little sisters when they were younger."></div>
+      <div class="photo"><img src="Photos/IMG_0645.jpg" alt="Elena and one of her little sisters when they were younger."></div>
+      <div class="photo"><img src="Photos/IMG_3176.jpg" alt=""></div>
+      <div class="photo"><img src="Photos/EF906AF3-D35B-4BC4-B0EA-64D5D1444310.jpg" alt="Vinton family hike photo."></div>
+      <div class="photo"><img src="Photos/IMG_2365.jpg" alt="Green valley."></div>
+      <div class="photo"><img src="Photos/IMG_3176.jpg" alt="Views from mountain top"></div>
+      <div class="photo"><img src="Photos/IMG_3413.jpg" alt="Pasture."></div>
+      <div class="photo"><img src="Photos/IMG_4960.jpg" alt="Beach."></div>
+      <div class="photo"><img src="Photos/IMG_5539.jpg" alt="Elena and friends in hammocks."></div>
+      <div class="photo"><img src="Photos/IMG_6525.jpg" alt="Rainbow."></div>
+      <div class="photo"><img src="Photos/IMG_7243.jpg" alt="Mountain range."></div>
+    </div>
+
+    <footer>
+      Copyright © 2019 Trinity Sazo & Elena Vinton. All rights reserved.
+    </footer>
 
   </body>
 </html>
