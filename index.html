@@ -37,12 +37,14 @@
     #top {
       position: absolute;
       top: 0;
+      flex-direction:column;
       justify-content: space-between;
       align-items:center;
       width: 100%;
     }
 
     #logo {
+      text-align:center;
       font-size:20px;
       margin:10px 15px;
     }
@@ -104,7 +106,6 @@
     }
 
     #midText {
-      flex-wrap:wrap;
       height: 50vh;
       width: 100vw;
     }
@@ -116,7 +117,6 @@
     }
 
     .quote {
-      padding:0px 100px;
       font-family: 'EB Garamond', serif;
       font-size:18px;
     }
@@ -171,7 +171,7 @@
     .image img {
       object-fit: cover;
       height:400px;
-      width:550px;
+      width:500px;
     }
 
     footer {
@@ -179,6 +179,22 @@
       margin:20px 0px;
       text-align:center;
       color:grey;
+    }
+
+    @media only screen and (min-width: 700px) {
+
+      #top {
+        flex-direction:row;
+      }
+
+      #logo {
+        text-align:left;
+      }
+
+      .quote {
+        padding:0px 100px;
+      }
+
     }
   </style>
   <body>

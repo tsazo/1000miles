@@ -80,6 +80,91 @@
       border-radius: 100%;
     }
 
+    #gallery {
+      margin: 0px auto;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+      font-weight: normal;
+      color: green;
+    }
+
+    .photo img {
+      margin: 30px;
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .photo img:hover {
+      border: 2px green solid;
+      width: 370px;
+      transition: 0.4s;
+    }
+
+    #containerAbout {
+      display:flex;
+      justify-content:space-between;
+    }
+
+    #aboutNav {
+      margin:0px auto;
+      padding:0px 20px;
+      min-width:100px;
+      text-align: center;
+    }
+
+    #aboutNav a {
+      text-decoration:none;
+      color: grey;
+      font-size:12px;
+      transition:0.4s;
+    }
+
+    #aboutNav a:hover {
+      color:green;
+      letter-spacing: 1px;
+      transition:0.4s;
+    }
+
+    #aboutNav #active {
+      color:black;
+    }
+
+    #aboutNav #active:hover {
+      color:green;
+      letter-spacing: 1px;
+      transition:0.4s;
+    }
+
+    #about_text {
+      font-family: "Times", serif;
+      font-weight:bold;
+      font-size:18px;
+      color:green;
+    }
+
+    #bio {
+      width: 100%;
+      padding: 0px 12px 12px 12px;
+      box-sizing: border-box;
+      margin:0px 20px 25px 0px;
+      resize: vertical;
+    }
+
+    #bio p {
+      font-family: "Times", serif;
+      font-size:18px;
+      margin-bottom: 15px;
+    }
+
     @media only screen and (min-width: 700px) {
       .home, #top {
         display: flex;
@@ -116,92 +201,9 @@
       #donate:hover {
         background-color: white;
       }
-
-      #containerAbout {
-        display:flex;
-        justify-content:space-between;
-      }
-
-      #aboutNav {
-        margin:0px auto;
-        padding:0px 20px;
-        min-width:100px;
-        text-align: center;
-      }
-
-      #aboutNav a {
-        text-decoration:none;
-        color: grey;
-        font-size:12px;
-        transition:0.4s;
-      }
-
-      #aboutNav a:hover {
-        color:green;
-        letter-spacing: 1px;
-        transition:0.4s;
-      }
-
-      #aboutNav #active {
-        color:black;
-      }
-
-      #aboutNav #active:hover {
-        color:green;
-        letter-spacing: 1px;
-        transition:0.4s;
-      }
-
-      #about_text {
-        font-family: "Times", serif;
-        font-weight:bold;
-        font-size:18px;
-        color:green;
-      }
-
-      #bio {
-        width: 100%;
-        padding: 0px 12px 12px 12px;
-        box-sizing: border-box;
-        margin:0px 20px 25px 0px;
-        resize: vertical;
-      }
-
-      #bio p {
-        font-family: "Times", serif;
-        font-size:18px;
-        margin-bottom: 15px;
-      }
-
-      #gallery {
-        margin: 0px auto;
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-
-      h2 {
-        margin-top: 40px;
-        text-align: center;
-        font-weight: normal;
-        color: green;
-      }
-
-      .photo img {
-        margin: 30px;
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        transition: 0.4s;
-      }
-
-      .photo img:hover {
-        border: 2px green solid;
-        width: 350px;
-        transition: 0.4s;
-      }
     }
+
+
 
     footer {
       font-size: 12px;

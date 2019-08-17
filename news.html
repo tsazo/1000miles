@@ -37,12 +37,14 @@
     #top {
       position: absolute;
       top: 0;
+      flex-direction:column;
       justify-content: space-between;
       align-items:center;
       width: 100%;
     }
 
     #logo {
+      text-align:center;
       font-size:20px;
       margin:10px 15px;
     }
@@ -156,13 +158,13 @@
 
     .horizontalPhoto img {
       margin:10px auto;
-      width:60%;
+      width:90%;
       object-fit: cover;
     }
 
     .verticalPhoto img {
       margin:10px auto;
-      width:40%;
+      width:90%;
       object-fit: cover;
       max-height:75vh;
     }
@@ -184,6 +186,26 @@
       margin:20px 0px;
       text-align:center;
       color:grey;
+    }
+
+    @media only screen and (min-width: 700px) {
+
+      #top {
+        flex-direction:row;
+      }
+
+      #logo {
+        text-align:left;
+      }
+
+      .horizontalPhoto img {
+        width:550px;
+      }
+
+      .verticalPhoto img {
+        width:400px;
+      }
+
     }
 
   </style>
